@@ -13,6 +13,10 @@
 		3F2ABA9124D5163F00BBBB5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2ABA9024D5163F00BBBB5C /* Assets.xcassets */; };
 		3F2ABA9424D5163F00BBBB5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2ABA9224D5163F00BBBB5C /* LaunchScreen.storyboard */; };
 		3F2ABA9724D5163F00BBBB5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2ABA9624D5163F00BBBB5C /* main.m */; };
+		3F2ABAA024D519AA00BBBB5C /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2ABA9F24D519AA00BBBB5C /* TriangleViewController.m */; };
+		3F2ABAA424D51B4200BBBB5C /* BaseGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2ABAA324D51B4200BBBB5C /* BaseGLKViewController.m */; };
+		3F2ABAA624D5228200BBBB5C /* TriangleShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3F2ABAA524D5228200BBBB5C /* TriangleShader.vsh */; };
+		3F2ABAA824D5260400BBBB5C /* TriangleShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3F2ABAA724D5260400BBBB5C /* TriangleShader.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		3F2ABA9324D5163F00BBBB5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F2ABA9524D5163F00BBBB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F2ABA9624D5163F00BBBB5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F2ABA9E24D519AA00BBBB5C /* TriangleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleViewController.h; sourceTree = "<group>"; };
+		3F2ABA9F24D519AA00BBBB5C /* TriangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
+		3F2ABAA224D51B4200BBBB5C /* BaseGLKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseGLKViewController.h; sourceTree = "<group>"; };
+		3F2ABAA324D51B4200BBBB5C /* BaseGLKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseGLKViewController.m; sourceTree = "<group>"; };
+		3F2ABAA524D5228200BBBB5C /* TriangleShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TriangleShader.vsh; sourceTree = "<group>"; };
+		3F2ABAA724D5260400BBBB5C /* TriangleShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TriangleShader.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 		3F2ABA8624D5163D00BBBB5C /* MyLearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				3F2ABAA124D51B2E00BBBB5C /* Base */,
+				3F2ABA9D24D5198300BBBB5C /* Triangle */,
 				3F2ABA8724D5163D00BBBB5C /* AppDelegate.h */,
 				3F2ABA8824D5163D00BBBB5C /* AppDelegate.m */,
 				3F2ABA8A24D5163D00BBBB5C /* ViewController.h */,
@@ -69,6 +81,26 @@
 				3F2ABA9624D5163F00BBBB5C /* main.m */,
 			);
 			path = MyLearnOpenGL;
+			sourceTree = "<group>";
+		};
+		3F2ABA9D24D5198300BBBB5C /* Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				3F2ABA9E24D519AA00BBBB5C /* TriangleViewController.h */,
+				3F2ABA9F24D519AA00BBBB5C /* TriangleViewController.m */,
+				3F2ABAA524D5228200BBBB5C /* TriangleShader.vsh */,
+				3F2ABAA724D5260400BBBB5C /* TriangleShader.fsh */,
+			);
+			path = Triangle;
+			sourceTree = "<group>";
+		};
+		3F2ABAA124D51B2E00BBBB5C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3F2ABAA224D51B4200BBBB5C /* BaseGLKViewController.h */,
+				3F2ABAA324D51B4200BBBB5C /* BaseGLKViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +162,8 @@
 			files = (
 				3F2ABA9424D5163F00BBBB5C /* LaunchScreen.storyboard in Resources */,
 				3F2ABA9124D5163F00BBBB5C /* Assets.xcassets in Resources */,
+				3F2ABAA824D5260400BBBB5C /* TriangleShader.fsh in Resources */,
+				3F2ABAA624D5228200BBBB5C /* TriangleShader.vsh in Resources */,
 				3F2ABA8F24D5163D00BBBB5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2ABAA024D519AA00BBBB5C /* TriangleViewController.m in Sources */,
 				3F2ABA8C24D5163D00BBBB5C /* ViewController.m in Sources */,
+				3F2ABAA424D51B4200BBBB5C /* BaseGLKViewController.m in Sources */,
 				3F2ABA9724D5163F00BBBB5C /* main.m in Sources */,
 				3F2ABA8924D5163D00BBBB5C /* AppDelegate.m in Sources */,
 			);
@@ -220,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NM9V8TV33;
 				INFOPLIST_FILE = MyLearnOpenGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NM9V8TV33;
 				INFOPLIST_FILE = MyLearnOpenGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
