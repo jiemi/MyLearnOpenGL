@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseGLKViewController : GLKViewController
 
+- (void)compileShaderWithPath:(NSString *)path shader:(GLuint *)shader;
+
 @end
 
 NS_ASSUME_NONNULL_END

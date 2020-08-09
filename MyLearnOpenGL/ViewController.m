@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TriangleViewController.h"
+#import "FrameBufferGLKViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -23,8 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"三角形"];
-    self.classes = @[[TriangleViewController class]];
+    self.titles = @[@"三角形",@"Frame Buffer Object"];
+    self.classes = @[[TriangleViewController class],
+                     [FrameBufferGLKViewController class]];
     
     _tableView = [[UITableView alloc] init];
     _tableView.delegate = self;

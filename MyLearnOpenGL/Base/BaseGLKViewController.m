@@ -40,14 +40,24 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)compileShaderWithPath:(NSString *)path shader:(GLuint *)shader{
+    
+    *shader = glCreateShader(GL_FRAGMENT_SHADER);
+    
+    NSString* frameFile = path;
+    NSString* content2 = [NSString stringWithContentsOfFile:frameFile encoding:NSUTF8StringEncoding error:nil];
+    const GLchar* frameShaderSource = (GLchar *)[content2 UTF8String];
+    
+    glShaderSource(*shader, 1, &frameShaderSource, NULL);
+    glCompileShader(*shader);
+    
+    GLint success;
+    GLchar infoLog[512];
+    glGetShaderiv(*shader, GL_COMPILE_STATUS, &success);
+    if(!success)
+    {
+        glGetShaderInfoLog(*shader, 512, NULL, infoLog);
+        NSLog(@"ERROR::SHADER::VERTEX::COMPILATION_FAILED = %s", infoLog);
+    }
 }
-*/
-
 @end

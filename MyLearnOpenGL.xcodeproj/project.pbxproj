@@ -17,6 +17,8 @@
 		3F2ABAA424D51B4200BBBB5C /* BaseGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2ABAA324D51B4200BBBB5C /* BaseGLKViewController.m */; };
 		3F2ABAA624D5228200BBBB5C /* TriangleShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3F2ABAA524D5228200BBBB5C /* TriangleShader.vsh */; };
 		3F2ABAA824D5260400BBBB5C /* TriangleShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3F2ABAA724D5260400BBBB5C /* TriangleShader.fsh */; };
+		3F579B4B24DFE98E00B6A192 /* FrameBufferGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F579B4A24DFE98E00B6A192 /* FrameBufferGLKViewController.m */; };
+		3F579B4D24DFF64A00B6A192 /* IMG_8154.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3F579B4C24DFF64A00B6A192 /* IMG_8154.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		3F2ABAA324D51B4200BBBB5C /* BaseGLKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseGLKViewController.m; sourceTree = "<group>"; };
 		3F2ABAA524D5228200BBBB5C /* TriangleShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TriangleShader.vsh; sourceTree = "<group>"; };
 		3F2ABAA724D5260400BBBB5C /* TriangleShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TriangleShader.fsh; sourceTree = "<group>"; };
+		3F579B4924DFE98E00B6A192 /* FrameBufferGLKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameBufferGLKViewController.h; sourceTree = "<group>"; };
+		3F579B4A24DFE98E00B6A192 /* FrameBufferGLKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameBufferGLKViewController.m; sourceTree = "<group>"; };
+		3F579B4C24DFF64A00B6A192 /* IMG_8154.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8154.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,7 @@
 		3F2ABA8624D5163D00BBBB5C /* MyLearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				3F579B4824DFE3AF00B6A192 /* FrameBuffer */,
 				3F2ABAA124D51B2E00BBBB5C /* Base */,
 				3F2ABA9D24D5198300BBBB5C /* Triangle */,
 				3F2ABA8724D5163D00BBBB5C /* AppDelegate.h */,
@@ -101,6 +107,16 @@
 				3F2ABAA324D51B4200BBBB5C /* BaseGLKViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		3F579B4824DFE3AF00B6A192 /* FrameBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				3F579B4924DFE98E00B6A192 /* FrameBufferGLKViewController.h */,
+				3F579B4A24DFE98E00B6A192 /* FrameBufferGLKViewController.m */,
+				3F579B4C24DFF64A00B6A192 /* IMG_8154.JPG */,
+			);
+			path = FrameBuffer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F2ABA9424D5163F00BBBB5C /* LaunchScreen.storyboard in Resources */,
+				3F579B4D24DFF64A00B6A192 /* IMG_8154.JPG in Resources */,
 				3F2ABA9124D5163F00BBBB5C /* Assets.xcassets in Resources */,
 				3F2ABAA824D5260400BBBB5C /* TriangleShader.fsh in Resources */,
 				3F2ABAA624D5228200BBBB5C /* TriangleShader.vsh in Resources */,
@@ -176,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F2ABAA024D519AA00BBBB5C /* TriangleViewController.m in Sources */,
+				3F579B4B24DFE98E00B6A192 /* FrameBufferGLKViewController.m in Sources */,
 				3F2ABA8C24D5163D00BBBB5C /* ViewController.m in Sources */,
 				3F2ABAA424D51B4200BBBB5C /* BaseGLKViewController.m in Sources */,
 				3F2ABA9724D5163F00BBBB5C /* main.m in Sources */,
